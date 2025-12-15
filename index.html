@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lulu圣诞节快乐</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+</head>
+<body>
+
+ 
+    <audio id="heartbeat-sound" src="assets/TheKey.m4a" loop preload="auto"></audio>
+    <audio id="symphony-of-love" src="assets/Love.m4a" loop preload="auto"></audio>
+
+    
+    <div id="luluText" class="side-text">Merry Christmas<br>for Lulu</div>
+
+
+    <div id="envelope-layer">
+        <div class="envelope-wrapper" id="jialisEnvelope">
+            <div class="lid"></div>
+            <div class="card">To lulu<br>For You</div>
+            <div class="front"></div>
+            <div class="heart-seal">❤</div>
+        </div>
+        <div class="tip-text" id="tipText">点击信封 开启惊喜</div>
+    </div>
+
+    <!-- 确认小许是否准备好 -->
+    <div id="cute-modal-overlay">
+        <div class="cute-modal">
+            <div class="modal-img-container">
+                <img src="assets/1.png" alt="Cute Surprise">
+            </div>
+            <p class="modal-text">lulu准备好<br>接受圣诞礼物了嘛？</p>
+            <button id="btn-ready">我准备好啦 ❤</button>
+        </div>
+    </div>
+
+    
+    <script type="module" src="js/eternal_love.js"></script>
+</body>
+</html>
